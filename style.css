@@ -1,0 +1,235 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+}
+
+.intro {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.company-name {
+	margin: 20px 10px;
+	font-size: 50px;
+	padding: 5px 40px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+.intro-para {
+	width: 80%;
+	margin: 20px 10px;
+	font-size: larger;
+}
+
+.divider {
+	width: 80%;
+	height: 1.5px;
+	margin: 20px auto;
+	background-color: black;
+}
+
+.heading {
+	width: fit-content;
+	margin: 40px auto;
+	padding: 5px 20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+.team {
+	margin: 20px 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-heading {
+	padding: 5px 20px;
+	font-size: larger;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;
+}
+
+.team-members {
+	padding: 10px 5px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.founders,
+.vice-presidents,
+.senior-software-engineers,
+.junior-software-engineers,
+.sales-officers,
+.marketing-officers {
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.profile {
+	width: 200px;
+	margin: 5px 10px;
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px gray;
+	cursor: pointer;
+}
+
+.profile-image-container {
+	width: 200px;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.profile-image-container img {
+	width: 190px;
+	border-radius: 12px;
+}
+
+.profile:hover {
+	box-shadow: 5px 5px 20px black;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screen size <= 600px */
+@media only screen and (max-width: 600px) {
+	.intro {
+		margin: 5px;
+	}
+
+	.company-name {
+		margin: 20px 10px;
+		font-size: 40px;
+	}
+
+	.intro-para {
+		margin: 10px 5px;
+		font-size: large;
+	}
+
+	.heading {
+		margin: 30px auto;
+		font-size: 20px;
+	}
+
+	.team-heading {
+		font-size: 18px;
+	}
+
+	.profile {
+		width: 180px;
+		margin: 5px 5px;
+		border-radius: 10px;
+	}
+
+	.profile-image-container {
+		width: 180px;
+		padding: 5px;
+	}
+
+	.profile-image-container img {
+		width: 170px;
+		border-radius: 8px;
+	}
+
+	.name,
+	.designation {
+		font-size: 10px;
+	}
+}
+
+/* For screen size <= 467px */
+@media only screen and (max-width: 467px) {
+	.intro {
+		margin: 2px;
+	}
+
+	.company-name {
+		font-size: 30px;
+	}
+
+	.intro-para {
+		margin: 10px 5px;
+		font-size: 16px;
+	}
+
+	.divider {
+		margin: 10px auto;
+	}
+
+	.heading {
+		margin: 20px auto;
+		font-size: 18px;
+	}
+
+	.team-heading {
+		font-size: 16px;
+	}
+
+	.profile {
+		width: 160px;
+		margin: 5px 5px;
+		border-radius: 8px;
+	}
+
+	.profile-image-container {
+		width: 160px;
+		padding: 5px;
+	}
+
+	.profile-image-container img {
+		width: 150px;
+		border-radius: 7px;
+	}
+
+	.name,
+	.designation {
+		font-size: 8px;
+	}
+}
+
+/* For screen size <= 367px */
+@media only screen and (max-width: 367px) {
+	.intro {
+		margin: 2px;
+	}
+
+	.company-name {
+		font-size: 25px;
+	}
+
+	.intro-para {
+		margin: 10px 5px;
+		font-size: 16px;
+	}
+
+	.divider {
+		margin: 10px auto;
+	}
+
+	.heading {
+		margin: 20px auto;
+		padding: 3px 20px;
+		font-size: 18px;
+		border-radius: 8px;
+	}
+
+	.team-heading {
+		font-size: 15px;
+		padding: 3px 15px;
+		border-radius: 8px;
+	}
+}
